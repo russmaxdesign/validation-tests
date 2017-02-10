@@ -1,0 +1,37 @@
+.container-wide {
+  max-width: 80em;
+}
+
+.width33 {
+  width: 33%;
+}
+
+.test {
+  padding: 1em;
+  background: #eee;
+  outline: 1px solid red;
+}
+
+
+// pass / fail
+
+.pass,
+.fail {
+  display: inline-block;
+  border-radius: .3em;
+  padding: .2em .5em;
+}
+
+.pass {
+  background: rgba(125,200,125,.5);
+}
+
+.fail {
+  background: rgba(200,0,0,.3);
+}
+
+
+td, th {
+  vertical-align: top;
+  padding: .7em 20px .7em 0;
+}

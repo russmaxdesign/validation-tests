@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>HTML: validation tests</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <div class="container container-wide">
+    <h1>HTML: validation tests</h1>
+    <p><a href="https://github.com/russmaxdesign/validation-tests">Github Page</a></p>
+
+    <table>
+      <tr>
+        <th class="width33">HTML 4.01</th>
+        <th class="width33">XHTML 1.0</th>
+        <th class="width33">HTML 5</th>
+      </tr>
+      <tr>
+        <td><a href="tests/01-html4.html">Empty FORM</a> - <span class="fail">FAIL</span><br>(block level element required inside FORM)</td>
+        <td><a href="tests/01-xhtml1.html">Empty FORM</a> - <span class="pass">PASS</span></td>
+        <td><a href="tests/01-html5.html">Empty FORM</a> - <span class="pass">PASS</span></td>
+      </tr>
+      <tr>
+        <td><a href="tests/02-html4.html">FORM with content</a> - <span class="fail">FAIL</span><br>(block level element required inside FORM)</td>
+        <td><a href="tests/02-xhtml1.html">FORM with content</a> - <span class="fail">FAIL</span><br>(block level element required inside FORM)</td>
+        <td><a href="tests/02-html5.html">FORM with content</a> - <span class="pass">PASS</span></td>
+      </tr>
+      <tr>
+        <td><a href="tests/03-html4.html">FORM with DIV</a> - <span class="pass">PASS</span></td>
+        <td><a href="tests/03-xhtml1.html">FORM with DIV</a> - <span class="pass">PASS</span></td>
+        <td><a href="tests/03-html5.html">FORM with DIV</a> - <span class="pass">PASS</span></td>
+      </tr>
+      <tr>
+        <td><a href="tests/04-html4.html">FORM with LABEL</a> - <span class="fail">FAIL</span><br>(block level element required inside FORM)</td>
+        <td><a href="tests/04-xhtml1.html">FORM with LABEL</a> - <span class="fail">FAIL</span><br>(block level element required inside FORM)</td>
+        <td><a href="tests/04-html5.html">FORM with LABEL</a> - <span class="pass">PASS</span></td>
+      </tr>
+      <tr>
+        <td><a href="tests/05-html4.html">FIELDSET without LEGEND</a> - <span class="fail">FAIL</span><br>(LEGEND required if FIELDSET is used)</td>
+        <td><a href="tests/05-xhtml1.html">FIELDSET without LEGEND</a> - <span class="pass">PASS</span></td>
+        <td><a href="tests/05-html5.html">FIELDSET without LEGEND</a> - <span class="pass">PASS</span></td>
+      </tr>
+      <tr>
+        <td><a href="tests/06-html4.html">FIELDSET with LEGEND</a> - <span class="pass">PASS</span></td>
+        <td><a href="tests/06-xhtml1.html">FIELDSET with LEGEND</a> - <span class="pass">PASS</span></td>
+        <td><a href="tests/06-html5.html">FIELDSET with LEGEND</a> - <span class="pass">PASS</span></td>
+      </tr>
+      <tr>
+        <td><a href="tests/07-html4.html">FIELDSET with two LEGENDs</a> - <span class="fail">FAIL</span><br>(FIELDSET requires only one LEGEND)</td>
+        <td><a href="tests/07-xhtml1.html">FIELDSET with two LEGENDs</a> - <span class="pass">PASS</span><br>(This should actially fail)</td>
+        <td><a href="tests/07-html5.html">FIELDSET with two LEGENDs</a> - <span class="fail">FAIL</span><br>(FIELDSET requires only one LEGEND)</td>
+      </tr>
+      <tr>
+        <td><a href="tests/08-html4.html">FIELDSET with nested FIELDSET</a> - <span class="pass">PASS</span></td>
+        <td><a href="tests/08-xhtml1.html">FIELDSET with nested FIELDSET</a> - <span class="pass">PASS</span></td>
+        <td><a href="tests/08-html5.html">FIELDSET with nested FIELDSET</a> - <span class="pass">PASS</span></td>
+      </tr>
+      <tr>
+        <td><a href="tests/09-html4.html">LEGEND with H3</a> - <span class="fail">FAIL</span><br>(inline content inside LEGEND)</td>
+        <td><a href="tests/09-xhtml1.html">LEGEND with H3</a> - <span class="fail">FAIL</span><br>(inline content inside LEGEND)</td>
+        <td><a href="tests/09-html5.html">LEGEND with H3</a> - <span class="pass">PASS</span></td>
+      </tr>
+      <tr>
+        <td><a href="tests/10-html4.html">Empty BLOCKQUOTE</a> - <span class="fail">FAIL</span><br>(block level element required inside BLOCKQUOTE)</td>
+        <td><a href="tests/10-xhtml1.html">Empty BLOCKQUOTE</a> - <span class="pass">PASS</span></td>
+        <td><a href="tests/10-html5.html">Empty BLOCKQUOTE</a> - <span class="pass">PASS</span></td>
+      </tr>
+      <tr>
+        <td><a href="tests/11-html4.html">Empty BODY</a> - <span class="fail">FAIL</span><br>(block level element required inside BODY)</td>
+        <td><a href="tests/11-xhtml1.html">Empty BODY</a> - <span class="pass">PASS</span></td>
+        <td><a href="tests/11-html5.html">Empty BODY</a> - <span class="pass">PASS</span></td>
+      </tr>
+      <tr>
+        <td><a href="tests/12-html4.html">CAPTION with H3</a> - <span class="fail">FAIL</span><br>(only inline content allowed inside CAPTION)</td>
+        <td><a href="tests/12-xhtml1.html">CAPTION with H3</a> - <span class="fail">FAIL</span></td>
+        <td><a href="tests/12-html5.html">CAPTION with H3</a> - <span class="pass">PASS</span></td>
+      </tr>
+      <tr>
+        <td><a href="tests/13-html4.html">Self closing element without trailing slash</a> - <span class="pass">PASS</span></td>
+        <td><a href="tests/13-xhtml1.html">Self closing element without trailing slash</a> - <span class="fail">FAIL</span><br>(trailing slash required)</td>
+        <td><a href="tests/13-html5.html">Self closing element without trailing slash</a> - <span class="pass">PASS</span></td>
+      </tr>
+      <tr>
+        <td><a href="tests/14-html4.html">SCRIPT without type attribute</a> - <span class="pass">PASS</span></td>
+        <td><a href="tests/14-xhtml1.html">SCRIPT without type attribute</a> - <span class="fail">FAIL</span><br>(type attribute required)</td>
+        <td><a href="tests/14-html5.html">SCRIPT without type attribute</a> - <span class="pass">PASS</span></td>
+      </tr>
+      <tr>
+        <td><a href="tests/15-html4.html">Block element inside Terminal element</a> - <span class="fail">FAIL</span><br>(Terminal blocks cannot contain block elements)</td>
+        <td><a href="tests/15-xhtml1.html">Block element inside Terminal element</a> - <span class="fail">FAIL</span></td>
+        <td><a href="tests/15-html5.html">Block element inside Terminal element</a> - <span class="fail">FAIL</span></td>
+      </tr>
+      <tr>
+        <td><a href="tests/16-html4.html">Block element inside inline element</a> - <span class="fail">FAIL</span><br>(Inline elements cannot contain block elements)</td>
+        <td><a href="tests/16-xhtml1.html">Block element inside inline element</a> - <span class="fail">FAIL</span></td>
+        <td><a href="tests/16-html5.html">Block element inside inline element</a> - <span class="fail">FAIL</span></td>
+      </tr>
+    </table>
+    <hr>
+
+    <p style="margin-top: 2em;"><a href="https://github.com/russmaxdesign/validation-tests">Github Page</a></p>
+</div>
+</body>
+</html>
